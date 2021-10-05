@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript学生后台管理系统</title>
+    <link rel="stylesheet" href="../../static/css/reset.css">
+    <link rel="stylesheet" href="../../static/css/register.css">
+</head>
+<body>
+    <!-- 网址：https://developer.duyiedu.com/home
+        账号：0124016  密码：123456
+        老师---账号alan  密码123qwe
+        请求网址：https://api.duyiedu.com
+        注册接口：/api/student/stuRegister
+        数据账号："Q_A_Q_1590927055348" -->
+    <div class="user-register">
+        <!-- 图标部分 -->
+        <div class="logo-container">
+            <a href="../../pages/main/main.html"><img src="../../static/img/logo.png" alt=""></a>
+        </div>
+        <!-- 文本部分 -->
+        <div class="text-container">
+            <h3>用前端</h3>
+            <div>让用户有更好的体验</div>
+        </div>
+        <!-- 表单部分 -->
+        <div class="form-container">
+            <div class="form-title">
+                <h3>欢迎注册</h3>
+                <div>
+                    <span>已有账号？</span><a href="../login/login.html">登录</a>
+                </div>
+            </div>
+            <form id="registerForm" class="form-body">
+                <div class="form-item">
+                    <label for="userName">用户名:</label>
+                    <input type="text" name="" id="userName" class="">
+                    <div id="tipTxt" class="tip-txt">设置后不可更改，中英文均可，最长14个英文或7个汉字</div>
+                    <div id="errorTxt" class="error-txt"></div>
+                </div>
+                <div class="form-item">
+                    <label for="userAccount">账号:</label>
+                    <input type="text" name="" id="userAccount">
+                </div>
+                <div class="form-item">
+                    <label for="userPassword">密码:</label>
+                    <input type="text" name="" id="userPassword">
+                </div>
+                <div class="form-item">
+                    <label for="confirmPassword">确认密码:</label>
+                    <input type="text" name="" id="confirmPassword">
+                </div>
+                <button type="submit" id="submitBtn">注册</button>
+            </form>
+        </div>
+    </div>
+    <script src="../../utils/ajax.js"></script>
+    <script src="../../static/js/register.js"></script>
+</body>
+</html>
